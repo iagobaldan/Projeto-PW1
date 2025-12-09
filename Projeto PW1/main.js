@@ -56,7 +56,7 @@ $(function () {
             this.player.currentState.enter();
 
             this.audio = {
-                boom: document.getElementById('boom_sfx'),
+                boom: document.$('boom_sfx')[0],
                 started: false,
                 start() {
                     if (this.started || !this.boom) return;
